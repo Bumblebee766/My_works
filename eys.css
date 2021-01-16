@@ -1,0 +1,36 @@
+  body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: blanchedalmond;
+}
+.box{
+    display: flex;
+}
+.box .eye{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: block;
+    background: whitesmoke;
+    margin:0 20px;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(0, 0,0, 0.2),inset 2px 3px 15px orangered,
+    0 5px 5px rgba(0, 0,0, 0.2);
+}
+.box .eye::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #000000;
+transform: translate(-50%,-50%);
+border:10px solid #2196f3;
+ box-sizing: border-box;
+}
